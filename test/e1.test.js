@@ -3,7 +3,7 @@ import { f } from "../exercises/e1";
 
 const name = "Andrey";
 const age = 18;
-const message = 'Here is my first output ever!'
+const message = 'Here is my first output ever!';
 
 describe('logMessage', () => {
     it('The test function should exist', () => {

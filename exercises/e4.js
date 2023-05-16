@@ -9,9 +9,8 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
-}
+const splitFirstAndLastNames = (str) => str.split(' ');
+
 
 
 /** =========================
@@ -20,9 +19,10 @@ function splitFirstAndLastNames(str) {
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
+const personAge = (personObject) => {
   return personObject.age;
 }
+
 
 
 /** =========================
@@ -32,9 +32,8 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
-  return arr.includes(name);
-}
+const isNameInArray = (arr, name) => arr.includes(name);
+
 
 
 /** =========================
@@ -44,9 +43,10 @@ const isNameInArray = function(arr, name) {
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval (function() {
     if (i < max) {
       console.log(++i);
     } else {
@@ -54,8 +54,6 @@ const logSecondsUpToMax = function(max) {
     }
   }, 1000);
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"

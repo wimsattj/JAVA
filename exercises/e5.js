@@ -12,33 +12,46 @@
  */
 
 // Your code goes here...
+function getDiffTwentySeven(num) {
+  if (num >= 27){ return(Math.abs((27 - num) * 2));
+} else if (num ==27) { return (num-27)}
 
+return(27 - num);
+}
 
 
 
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
- * If the two argumants are same, then returns triple their sum.
+ * If the two arguments are same, then returns triple their sum.
  * Example1: sumOfTwoIntegers(13, 14) => 27
  * Example2: sumOfTwoIntegers(12, 12) => 72
  */
 
 // Your code goes here
+function sumOfTwoIntegers(num1, num2){
+  if (num1==num2) {
+    return ((num1+num2) * 3);
+  } else return(num1 + num2);
 
+}
 
 
 
 /** =========================
- * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
+ * Create a isOneOfThemOrTheirSumIsForty(num1, num2) function to check two given numbers and return a boolean.
  * IF one of the number is 40 OR if their sum is 40 return true
  * Otherwise, return false
- * Example1: isOneOfThemOrTheirSumIsFourty(40, 13) => true
- * Example2: isOneOfThemOrTheirSumIsFourty(22, 18) => true
- * Example3: isOneOfThemOrTheirSumIsFourty(23, 16) => false
+ * Example1: isOneOfThemOrTheirSumIsForty(40, 13) => true
+ * Example2: isOneOfThemOrTheirSumIsForty(22, 18) => true
+ * Example3: isOneOfThemOrTheirSumIsForty(23, 16) => false
  */
 
 // Your code goes here...
-
+function isOneOfThemOrTheirSumIsFourty(num1, num2) {
+  if (num1 == 40 || num2 == 40 || num1 + num2 == 40) {return true;}
+  return false;
+}
 
 
 

@@ -18,6 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitest": "^0.28.3"
+    "vitest": "^0.28.5"
   }
 }
